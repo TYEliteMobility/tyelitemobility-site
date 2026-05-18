@@ -83,7 +83,33 @@
       background: #111111;
       color: #ffffff;
     }
+    
+    .social-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+    }
 
+    .social-icon{
+    width:24px;
+    height:24px;
+    margin-right:8px;
+    vertical-align:middle;
+    }
+
+    .button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    }
+
+    .button-facebook{
+    background:#1877F2;
+    color:white;
+    }
+    
     .hero {
       background: #f7f7f7;
       text-align: center;
@@ -190,8 +216,24 @@
   <p class="main-slogan">Motorbike & Scooter Rental in Bangkok</p>
   <p>Easy rental on Phetchaburi Road, Ratchathewi — near Pratunam, Phaya Thai and BTS Ratchathewi area.</p>
 
-  <a class="button" href="https://wa.me/66641232436">🟢 WhatsApp Booking</a>
-  <a class="button button-dark" href="https://line.me/ti/p/~0641232436">💬 Contact on LINE</a>
+  <div class="social-buttons">
+
+  <a class="button" href="https://wa.me/66641232436">
+  <img src="LogoWhatsapp.avif" class="social-icon">
+  WhatsApp Booking
+  </a>
+
+  <a class="button button-dark" href="https://line.me/ti/p/~0641232436">
+  <img src="LINElogo.svg.png" class="social-icon">
+  Contact on LINE
+  </a>
+
+  <a class="button button-facebook" href="#">
+  <img src="logofb.avif" class="social-icon">
+  Facebook
+  </a>
+
+  </div>
 
   <p class="contact-note">
     Phone / WhatsApp / LINE: <strong>06-4123-2436</strong><br>
