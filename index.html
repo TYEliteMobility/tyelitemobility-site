@@ -103,19 +103,32 @@ body {
 .intro .actions {margin-top:12px}
 @media(max-width:520px) {body{background-attachment:scroll;background-size:cover,900px auto}.intro .tagline{letter-spacing:.025em}.intro .hero{margin-bottom:14px}}
 
-/* V4: photographic HD marble texture. Upload marbre-noir-or.jpg beside index.html. */
+/* V5 — two original high-resolution marble images, one per device. */
 html { background:#08090a; }
 body {
   background-color:#08090a !important;
-  background-image: linear-gradient(rgba(0,0,0,.28),rgba(0,0,0,.40)), url("marbre-noir-or.jpg") !important;
+  background-image:linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.34)),url("marbre-pc.jpg") !important;
   background-position:center top !important;
-  background-size:cover !important;
-  background-repeat:no-repeat !important;
-  background-attachment:fixed !important;
+  background-size:100% auto !important;
+  background-repeat:repeat-y !important;
+  background-attachment:scroll !important;
 }
-/* Keep the marble visible but protect legibility. */
-.topbar,.panel,.bike,.legal { backdrop-filter:blur(7px); }
-@media (max-width:700px){body{background-attachment:scroll !important;background-size:cover !important}}
+/* Readability over the detailed marble, without hiding its natural veins. */
+.topbar,.panel,.bike,.legal {backdrop-filter:blur(7px)}
+/* The storefront remains centered and never stretched or cropped. */
+.intro .hero {width:100%;max-width:800px;margin:0 auto 18px;padding:0}
+.intro .storefront {display:block;width:100%;height:auto !important;max-height:none !important;min-height:0 !important;object-fit:contain !important;object-position:center;margin:0 auto}
+@media(max-width:700px){
+  body {
+    background-image:linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.34)),url("marbre-mobile.jpg") !important;
+    background-size:100% auto !important;
+    background-position:center top !important;
+    background-repeat:repeat-y !important;
+    background-attachment:scroll !important;
+  }
+  .intro .hero {max-width:100%;margin:0 auto 14px}
+  .intro .storefront {width:100%;height:auto !important;max-height:none !important}
+}
 </style>
 </head>
 <body>
