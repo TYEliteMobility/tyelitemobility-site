@@ -102,6 +102,20 @@ body {
 .intro .storefront {max-height:420px;object-fit:contain;box-shadow:0 10px 35px #0009}
 .intro .actions {margin-top:12px}
 @media(max-width:520px) {body{background-attachment:scroll;background-size:cover,900px auto}.intro .tagline{letter-spacing:.025em}.intro .hero{margin-bottom:14px}}
+
+/* V4: photographic HD marble texture. Upload marbre-noir-or.jpg beside index.html. */
+html { background:#08090a; }
+body {
+  background-color:#08090a !important;
+  background-image: linear-gradient(rgba(0,0,0,.28),rgba(0,0,0,.40)), url("marbre-noir-or.jpg") !important;
+  background-position:center top !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  background-attachment:fixed !important;
+}
+/* Keep the marble visible but protect legibility. */
+.topbar,.panel,.bike,.legal { backdrop-filter:blur(7px); }
+@media (max-width:700px){body{background-attachment:scroll !important;background-size:cover !important}}
 </style>
 </head>
 <body>
