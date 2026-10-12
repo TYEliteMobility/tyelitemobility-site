@@ -207,6 +207,75 @@ body {
   .intro h1 {filter:drop-shadow(0 1px 1px #2d1804) drop-shadow(0 0 6px rgba(255,211,113,.4));}
 }
 
+
+/* V8 — clear metallic letters, with shadows BEHIND rather than over the gold. */
+/* Remove the large golden glow from V7: it was muddying the letter faces. */
+.intro h1, .brand, .heading h2, .panel h2, .location h2,
+.bike h3, .legal strong {
+  background-image:linear-gradient(180deg,#fffbe2 0%,#ffe6a0 23%,#d69a32 49%,#fff1b8 69%,#dca447 87%,#ffe2a0 100%) !important;
+  background-clip:text !important;
+  -webkit-background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  text-shadow:none !important;
+  filter:drop-shadow(0 2px 1px rgba(0,0,0,.95)) !important;
+}
+/* The black shading is on the heading AREAS, not on top of the glyphs. */
+.intro::before {display:none !important;}
+.intro {
+  background:radial-gradient(ellipse 75% 21% at 50% 7%,rgba(0,0,0,.75),rgba(0,0,0,.30) 70%,transparent 100%);
+}
+.heading {
+  background:radial-gradient(ellipse at center,rgba(0,0,0,.73),rgba(0,0,0,.35) 53%,transparent 82%);
+}
+.conditions {
+  background:radial-gradient(ellipse at center,rgba(0,0,0,.72),rgba(0,0,0,.28) 65%,transparent 100%);
+  padding:12px 10px;
+}
+.location .wrap {
+  background:radial-gradient(ellipse 80% 17% at 50% 8%,rgba(0,0,0,.70),rgba(0,0,0,.26) 75%,transparent 100%);
+}
+/* Dark edge definition for WHITE letters, without a luminous haze. */
+.intro .tagline,.intro .sub,.heading p,.conditions,.location p,
+.phone,.panel p,.panel li,.features,.deposit,.rate span,.rate em,
+.legal p,.nav a {
+  text-shadow:0 1px 2px rgba(0,0,0,.95) !important;
+}
+/* Match the subtitle typography to the company's Cinzel name. */
+.intro .tagline {
+  font-family:Cinzel,Georgia,serif !important;
+  font-size:clamp(15px,1.8vw,21px) !important;
+  font-weight:700 !important;
+  line-height:1.45;
+  letter-spacing:.025em;
+  color:#fffaf0;
+}
+/* A little more legibility for small body copy. */
+body {font-size:16px;}
+.phone,.conditions {font-size:14px; font-weight:600;}
+.heading p,.location p,.panel p,.panel li {font-weight:500;}
+.features,.deposit {font-size:13px;font-weight:600;}
+.rate span {font-size:12px;font-weight:600;}
+.rate em {font-size:11px;font-weight:600;}
+.legal {font-size:13px;}
+/* Gold highlights in the CONTENT of cards, not just their headings. */
+.rate strong,.panel strong,.location strong,.phone a,.conditions a,.legal a {
+  color:#ffdf8b !important;
+  -webkit-text-fill-color:#ffdf8b !important;
+  text-shadow:0 1px 1px #352006,0 0 3px rgba(255,220,135,.25) !important;
+}
+.rate strong {font-size:19px;font-weight:800;}
+/* Brighten outlines but avoid neon-like wide glows. */
+.bike,.panel,.map {border-color:rgba(255,216,132,.82) !important;}
+.rate {border-color:rgba(255,216,132,.70) !important;}
+@media(max-width:700px){
+  .intro .tagline {font-size:clamp(14px,3.7vw,18px) !important;letter-spacing:0;}
+  .phone {font-size:13px;}
+  .features,.deposit {font-size:12px;}
+  .rate span {font-size:11px;}
+  .rate em {font-size:10px;}
+  .rate strong {font-size:17px;}
+}
+
 </style>
 </head>
 <body>
