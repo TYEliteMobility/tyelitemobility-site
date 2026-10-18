@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tyelitemobility.github.io/tyelitemobility-site/sitemap.xml
