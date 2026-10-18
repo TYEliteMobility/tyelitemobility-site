@@ -353,6 +353,10 @@ body {font-size:16px;}
   .services .laundry {flex-direction:row;align-items:center;}
 }
 
+/* V10 — Birdy's plain black background comparison. All other styling unchanged. */
+html, body { background-color:#050505 !important; }
+body { background-image:none !important; }
+@media (max-width:700px) { body { background-image:none !important; } }
 </style>
 </head>
 <body>
@@ -366,7 +370,7 @@ body {font-size:16px;}
 <script>
 // Add new motorbikes here later; cards are generated automatically.
 const bikes=[
-{name:'Honda Scoopy 110cc',img:'Scoopy.webp',features:'Phone holder',deposit:'3,000 THB or original passport',prices:[350,1900,3000,4500]},
+{name:'Honda Scoopy 110cc',img:'Scoopy.webp',features:'Phone holder',deposit:'3,000 THB or original passport',prices:[350,1750,3000,4500]},
 {name:'Yamaha NMAX 155cc',img:'nmaxblue.jpg',features:'ABS · Phone holder',deposit:'4,000 THB or original passport',prices:[500,2800,4000,5500]},
 {name:'Honda PCX 150cc',img:'PCX.jpg',features:'ABS · Keyless · Phone holder',deposit:'4,000 THB or original passport',prices:[550,3150,4500,6000]},
 {name:'Honda PCX 160cc',img:'pcx160.webp',features:'ABS · Keyless · USB · Phone holder',deposit:'4,000 THB or original passport',prices:[600,3500,4900,6500]},
