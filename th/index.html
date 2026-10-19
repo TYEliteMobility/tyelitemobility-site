@@ -870,13 +870,16 @@ a[href^="tel:"] {
 
 /* Preserve the new contemporary typography */
   
-/* TEST — Or champagne moderne + reflet lumineux */
+/* TEST — Or champagne poli avec scintillement subtil */
+/* Uniquement Honda Click 125i */
+
 #honda-click-125i .home-daily {
   position: relative;
   display: inline-block;
   align-self: flex-start;
 
   color: #F4D98C !important;
+
   background: linear-gradient(
     180deg,
     #FFF4D1 0%,
@@ -888,11 +891,14 @@ a[href^="tel:"] {
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 
-  text-shadow: none !important;
-  filter: none !important;
+  text-shadow:
+    0 0 3px rgba(255, 237, 180, .28),
+    0 0 9px rgba(245, 197, 99, .16) !important;
+
+  filter: drop-shadow(0 0 3px rgba(255, 223, 148, .30)) !important;
 }
 
-/* Même or sur le / day */
+/* Conserver le même dégradé sur / day */
 #honda-click-125i .home-daily small {
   color: #F4D98C !important;
   background: inherit !important;
@@ -902,25 +908,10 @@ a[href^="tel:"] {
   filter: none !important;
 }
 
-/* Petite étoile lumineuse, indépendante du texte */
+/* Supprimer totalement l'ancienne étoile */
 #honda-click-125i .home-daily::after {
-  content: "✦";
-  position: absolute;
-  top: -9px;
-  right: -13px;
-
-  font-size: 13px;
-  line-height: 1;
-  color: #FFFBEA !important;
-  -webkit-text-fill-color: #FFFBEA !important;
-  background: none !important;
-
-  text-shadow:
-    0 0 3px #FFFFFF,
-    0 0 7px rgba(255,240,180,.85),
-    0 0 13px rgba(255,210,110,.45);
-
-  pointer-events: none;
+  content: none !important;
+  display: none !important;
 }
   
 </style><link href="https://tyelitemobility.github.io/tyelitemobility-site/index.html" hreflang="en" rel="alternate"/><link href="https://tyelitemobility.github.io/tyelitemobility-site/th/index.html" hreflang="th" rel="alternate"/><link href="https://tyelitemobility.github.io/tyelitemobility-site/th/index.html" rel="canonical"/></head>
