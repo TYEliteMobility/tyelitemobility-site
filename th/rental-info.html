@@ -239,4 +239,61 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <!-- Fin des modifications Rental Info TH -->
+
+<!-- T&Y — Ajustement de la présentation des 3 premières cases -->
+<style>
+
+/* Cases 1 et 2 : paragraphes plus étroits et centrés */
+.rental-page > .v13-panel:nth-of-type(1) > p,
+.rental-page > .v13-panel:nth-of-type(2) > p {
+  max-width: 620px;
+  margin: 12px auto !important;
+  text-align: center !important;
+  line-height: 1.8;
+  text-wrap: pretty;
+}
+
+/* Case 3 : liste d'équipements compacte et alignée */
+.rental-page > .v13-panel:nth-of-type(3) > ul {
+  display: table;
+  width: fit-content;
+  max-width: 100%;
+  margin: 16px auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+  text-align: left !important;
+}
+
+/* Chaque équipement sur sa propre ligne */
+.rental-page > .v13-panel:nth-of-type(3) > ul li {
+  display: list-item;
+  text-align: left !important;
+  padding: 5px 0;
+  line-height: 1.7;
+}
+
+/* Paragraphe sous les équipements */
+.rental-page > .v13-panel:nth-of-type(3) > p {
+  max-width: 620px;
+  margin: 16px auto !important;
+  text-align: center !important;
+  line-height: 1.8;
+  text-wrap: pretty;
+}
+
+/* Écrans mobiles */
+@media (max-width: 600px) {
+  .rental-page > .v13-panel:nth-of-type(-n+3) > p {
+    max-width: 34ch;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .rental-page > .v13-panel:nth-of-type(3) > ul {
+    max-width: 95%;
+  }
+}
+
+</style>
+<!-- Fin ajustement -->
 </body></html>
