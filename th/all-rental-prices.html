@@ -194,6 +194,35 @@
     padding: 8px;
   }
 }
+/* T&Y — Léger voile noir derrière le titre thaï */
+
+.prices-intro {
+  position: relative;
+  isolation: isolate;
+  padding: 22px 24px !important;
+}
+
+.prices-intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.38) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  pointer-events: none;
+}
+
+@media (max-width: 520px) {
+  .prices-intro {
+    padding: 18px 10px !important;
+  }
+}
 </style>
 
 <script>
