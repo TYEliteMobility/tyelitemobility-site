@@ -145,4 +145,98 @@
 <section class="v13-panel" id="private-transfers"><h2>บริการรถรับส่งสนามบินและต่างจังหวัด</h2><p>ต้องการรถรับส่งจากโรงแรม สนามบิน หรือไปต่างจังหวัด? เราสามารถช่วยประสานงานกับ <strong>พาร์ตเนอร์คนขับมืออาชีพ</strong> โดยสอบถามราคาและรถว่างได้ตามคำขอ</p><div class="v13-transfer"><img alt="Private airport transfer welcome service" loading="lazy" src="../PrivateDriver.PNG"/><img alt="Book your transfer now — Bangkok airports BKK and DMK, Pattaya, Hua Hin, Ayutthaya, Kanchanaburi and Rayong" loading="lazy" src="../BOOKNOW.1.jpeg"/></div><p><strong>รับส่งสนามบิน:</strong> สุวรรณภูมิ (BKK) และดอนเมือง (DMK) <strong>จุดหมายต่างจังหวัด:</strong> พัทยา หัวหิน อยุธยา กาญจนบุรี และระยอง จุดหมายอื่นสอบถามได้</p><p><a class="btn gold" href="https://wa.me/66967718495?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20a%20private%20transfer." rel="noopener" target="_blank">สอบถามรถรับส่งผ่าน WhatsApp</a></p></section>
 <div class="v13-center"><a class="btn" href="all-rental-prices.html">ดูราคามอเตอร์ไซค์ →</a> <a class="btn" href="index.html">← กลับหน้าแรก</a></div></main>
 <footer class="legal"><strong>T&amp;Y Elite Mobility Co., Ltd.</strong><p>บริการเช่ามอเตอร์ไซค์ · กรุงเทพฯ ประเทศไทย</p><p>โทรศัพท์ / WhatsApp: <a href="tel:+66967718495">+66 96 771 8495</a></p><p><a href="../CGL Eng.pdf" rel="noopener" target="_blank">เงื่อนไขการเช่า (ภาษาอังกฤษ)</a> · <a href="../CGL Thai .pdf" rel="noopener" target="_blank">ข้อกำหนดและเงื่อนไขการเช่า (Thai)</a></p><p>© 2026 T&amp;Y Elite Mobility Co., Ltd. สงวนลิขสิทธิ์</p></footer>
+
+<!-- T&Y Elite Mobility — Rental Info TH -->
+<style>
+/* Titres centrés dans les cinq encadrés */
+.rental-page > .v13-panel h2 {
+  text-align: center !important;
+}
+
+/* Paragraphes centrés sauf dans la case livraison */
+.rental-page > .v13-panel:not(:has(.v13-table)) > p {
+  text-align: center !important;
+}
+
+/* Sous-titres de nationalité centrés */
+.rental-page .v13-panel h3.nationality {
+  text-align: center !important;
+}
+
+/* Liste des équipements centrée */
+.rental-page > .v13-panel ul {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: center !important;
+}
+
+/* Bouton WhatsApp centré */
+.rental-page #private-transfers > p:last-child {
+  text-align: center !important;
+}
+
+/* Pictogrammes or champagne */
+.rental-page .rental-heading-icon {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: -5px;
+  margin-right: 8px;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  filter: none !important;
+}
+
+.rental-page .rental-heading-icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #F6DE9D;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const panels = document.querySelectorAll(
+    ".rental-page > .v13-panel"
+  );
+
+  const icons = {
+    // Première case : document / réservation
+    0: `<svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 3h8l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+      <path d="M15 3v5h5M9 12h6M9 16h3"/>
+      <path d="m14 17 2 2 4-4"/>
+    </svg>`,
+
+    // Quatrième case : livraison
+    3: `<svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 6h11v11H3z"/>
+      <path d="M14 10h4l3 4v3h-7z"/>
+      <circle cx="7" cy="18" r="2"/>
+      <circle cx="18" cy="18" r="2"/>
+    </svg>`
+  };
+
+  Object.entries(icons).forEach(function ([index, svg]) {
+    const heading = panels[Number(index)]?.querySelector("h2");
+    if (!heading || heading.querySelector(".rental-heading-icon")) {
+      return;
+    }
+
+    const icon = document.createElement("span");
+    icon.className = "rental-heading-icon";
+    icon.setAttribute("aria-hidden", "true");
+    icon.innerHTML = svg;
+    heading.prepend(icon);
+  });
+});
+</script>
+<!-- Fin des modifications Rental Info TH -->
 </body></html>
