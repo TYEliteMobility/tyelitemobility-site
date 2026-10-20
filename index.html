@@ -1179,4 +1179,92 @@ body,
 
 </style>
 <!-- End exact Thai gold -->
+
+<!-- T&Y — Final English homepage refinements -->
+<style id="ty-english-home-final">
+
+/* 1. Bangkok Riding Guide : lien blanc */
+#fleet > p:first-child a {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* 2. Laverie : deuxième logo à droite sur ordinateur */
+@media (min-width: 761px) {
+  .v14-home-laundry > div {
+    text-align: center !important;
+    min-width: 0;
+  }
+
+  .v14-home-laundry::after {
+    content: "";
+    display: block;
+    flex: 0 0 76px;
+    width: 76px;
+    height: 76px;
+    background:
+      url("IMGwashndry.jpg")
+      center / contain no-repeat;
+  }
+}
+
+/* 3. Pied de page : nom de l'entreprise
+   identique à la phrase située en dessous */
+.legal > strong {
+  color: #ded3c1 !important;
+  -webkit-text-fill-color: #ded3c1 !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* 4. Voile noir discret derrière les textes
+   entre les boutons de contact et les motos */
+.phone,
+#fleet > p:first-child,
+#fleet > .heading {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Dégradé noir doux, sans cadre ni bordure */
+.phone::before,
+#fleet > p:first-child::before,
+#fleet > .heading::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+
+  inset: -12px -18px;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,.68) 0%,
+    rgba(0,0,0,.43) 48%,
+    rgba(0,0,0,0) 82%
+  );
+}
+
+/* Adaptation du voile sur téléphone */
+@media (max-width: 700px) {
+  .phone::before,
+  #fleet > p:first-child::before,
+  #fleet > .heading::before {
+    inset: -9px -5px;
+
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0,0,0,.72) 0%,
+      rgba(0,0,0,.45) 52%,
+      transparent 90%
+    );
+  }
+}
+
+</style>
+<!-- End final refinements -->
 </body></html>
