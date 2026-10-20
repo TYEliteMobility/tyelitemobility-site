@@ -1032,4 +1032,45 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <!-- Fin navigation active -->
+
+<!-- T&Y — Symétrie des 4 cadres sur ordinateur -->
+<style id="ty-home-desktop-symmetry">
+
+@media (min-width: 761px) {
+
+  /* Deux colonnes strictement identiques */
+  .details-grid,
+  .services {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  /* Même largeur pour les quatre cadres */
+  .details-grid > .panel,
+  .services > .panel {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Hauteur identique à l'intérieur de chaque rangée */
+  .details-grid,
+  .services {
+    align-items: stretch !important;
+  }
+
+  /* Centrage vertical des contenus */
+  .details-grid > .panel,
+  .services > .panel {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+}
+
+</style>
+<!-- Fin symétrie -->
 </body></html>
