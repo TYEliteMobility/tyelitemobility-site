@@ -176,4 +176,42 @@
 <section class="guide-section" id="tips"><h2><span aria-hidden="true" class="guide-heading-icon">✦</span><span class="guide-heading-text"> 05 · เคล็ดลับเพิ่มเติม</span></h2><ul><li>ประเทศไทยขับรถ<strong>ชิดซ้าย</strong></li><li>เมื่อฝนตก เส้นจราจรและฝาท่อโลหะอาจลื่นเป็นพิเศษ</li><li>ตรวจสอบเบรก ยาง และไฟก่อนออกเดินทาง</li><li>ห้ามขับขี่หลังดื่มเครื่องดื่มแอลกอฮอล์</li><li>เลือกรถให้เหมาะกับประสบการณ์และความมั่นใจในการขับขี่</li></ul><div class="guide-rule"></div><p><strong>พร้อมเที่ยวกรุงเทพฯ แล้วหรือยัง?</strong> เลือกดูมอเตอร์ไซค์ทั้งแปดรุ่นของ T&amp;Y Elite Mobility พร้อมราคาที่ชัดเจน และติดต่อเราเพื่อสอบถามรถว่าง</p><p><a class="btn gold" href="index.html#fleet">ดูรถให้เช่าของเรา →</a></p><p class="guide-fine">ข้อมูลทั่วไป ไม่ใช่คำปรึกษาด้านกฎหมายหรือประกันภัย กฎระเบียบและเงื่อนไขกรมธรรม์อาจเปลี่ยนแปลง โปรดตรวจสอบข้อมูลล่าสุดก่อนขับขี่</p></section>
 </main>
 <footer class="legal"><strong>T&amp;Y Elite Mobility Co., Ltd.</strong><p>บริการเช่ามอเตอร์ไซค์ · กรุงเทพฯ ประเทศไทย</p><p>โทรศัพท์ / WhatsApp: <a href="tel:+66967718495">+66 96 771 8495</a></p><p><a href="../CGL Eng.pdf" rel="noopener" target="_blank">เงื่อนไขการเช่า (ภาษาอังกฤษ)</a> · <a href="../CGL Thai .pdf" rel="noopener" target="_blank">ข้อกำหนดและเงื่อนไขการเช่า (Thai)</a></p><p>© 2026 T&amp;Y Elite Mobility Co., Ltd. สงวนลิขสิทธิ์</p></footer>
+
+<!-- T&Y Elite Mobility — Navigation active -->
+<style>
+/* Page actuellement consultée */
+.nav > a.nav-active {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+  background: rgba(244,217,140,0.10);
+  border: 1px solid rgba(244,217,140,0.75);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 520px) {
+  .nav > a.nav-active {
+    padding: 4px 6px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll(".nav > a").forEach(function (link) {
+    const linkPage = new URL(link.href).pathname.split("/").pop();
+
+    if (linkPage === currentPage) {
+      link.classList.add("nav-active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
+});
+</script>
+<!-- Fin navigation active -->
 </body></html>
