@@ -1144,4 +1144,25 @@ document.addEventListener("DOMContentLoaded", function () {
   color: #FFF4D1 !important;
   -webkit-text-fill-color: #FFF4D1 !important;
 }
+/* Voile noir discret derrière le titre et son sous-titre */
+.v13-hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.v13-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -12px -18px;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.38) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  pointer-events: none;
+}
 </body></html>
