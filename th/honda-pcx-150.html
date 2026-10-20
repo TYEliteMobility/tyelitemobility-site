@@ -150,4 +150,87 @@
 <div class="v13-panel"><h3>03 · บริการส่งรถถึงที่พัก</h3><p>ส่งหรือรับรถเที่ยวเดียว: <strong>800 THB</strong>.</p><p>ส่งและรับรถ: <strong>1,500 THB</strong>.</p><p>รับส่งรถฟรีทั้งสองเที่ยวสำหรับการเช่าเกิน 15 วัน ขึ้นอยู่กับพื้นที่และการยืนยัน</p><a href="rental-info.html">รายละเอียดการจัดส่ง →</a></div></div></section>
 <div class="image-lightbox" id="enlarge"><a class="close" href="#photo" aria-label="ปิดภาพ">×</a><a href="#photo"><img alt="ภาพขยาย Honda PCX 150cc สำหรับเช่า" src="../PCX.jpg"/></a></div></main>
 <footer class="legal"><strong>T&amp;Y Elite Mobility Co., Ltd.</strong><p>บริการเช่ามอเตอร์ไซค์ · กรุงเทพฯ ประเทศไทย</p><p>โทรศัพท์ / WhatsApp: <a href="tel:+66967718495">+66 96 771 8495</a></p><p><a href="../CGL Eng.pdf" rel="noopener" target="_blank">เงื่อนไขการเช่า (ภาษาอังกฤษ)</a> · <a href="../CGL Thai .pdf" rel="noopener" target="_blank">ข้อกำหนดและเงื่อนไขการเช่า (Thai)</a></p><p>© 2026 T&amp;Y Elite Mobility Co., Ltd. สงวนลิขสิทธิ์</p></footer>
+
+<!-- T&Y Elite Mobility — pictogrammes universels -->
+<style>
+/* Titres des trois encadrés centrés */
+.v13-three .v13-panel h3 {
+  text-align: center !important;
+}
+
+/* Pictogrammes or champagne */
+.v13-three .panel-icon {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-right: 7px;
+  color: #F4D98C;
+  -webkit-text-fill-color: initial;
+  background: none;
+  filter: none;
+}
+
+.v13-three .panel-icon svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: #F4D98C;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const icons = [
+    // 01 — Réservation
+    `<svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="5" width="18" height="16" rx="2"/>
+      <path d="M7 3v4M17 3v4M3 10h18"/>
+      <path d="m9 15 2 2 4-4"/>
+    </svg>`,
+
+    // 02 — Casque
+    `<svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 14a9 9 0 0 1 18 0v3h-6l-2 3H9l-2-3H3z"/>
+      <path d="M3 14h18M15 14v3M7 17h3"/>
+    </svg>`,
+
+    // 03 — Livraison
+    `<svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 6h11v11H3z"/>
+      <path d="M14 10h4l3 4v3h-7z"/>
+      <circle cx="7" cy="18" r="2"/>
+      <circle cx="18" cy="18" r="2"/>
+    </svg>`
+  ];
+
+  document.querySelectorAll(
+    ".v13-three .v13-panel h3"
+  ).forEach(function (title, index) {
+    if (index >= icons.length) return;
+
+    // Supprime uniquement le numéro 01, 02 ou 03
+    title.textContent = title.textContent.replace(
+      /^\s*0[1-3]\s*[·.:-]?\s*/,
+      ""
+    );
+
+    // Évite d'ajouter deux fois le pictogramme
+    if (title.querySelector(".panel-icon")) return;
+
+    const icon = document.createElement("span");
+    icon.className = "panel-icon";
+    icon.setAttribute("aria-hidden", "true");
+    icon.innerHTML = icons[index];
+
+    title.prepend(icon);
+  });
+});
+</script>
+<!-- Fin des pictogrammes universels -->
 </body></html>
