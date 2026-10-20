@@ -141,6 +141,59 @@
     padding: 4px 6px;
   }
 }
+/* T&Y — Disposition aérée identique à la version anglaise */
+
+/* Centrer le contenu et créer des marges élégantes */
+.prices-intro,
+.prices-fleet,
+.prices-back,
+.v13-three {
+  width: min(1120px, calc(100% - 36px));
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Conserver quatre scooters par ligne sur ordinateur */
+.prices-fleet {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+/* Espacement intérieur des cartes */
+.price-bike .bike-body {
+  padding: 16px;
+}
+
+/* Options des scooters en italique */
+.price-bike .features {
+  font-style: italic !important;
+}
+
+/* Tablettes */
+@media (max-width: 850px) {
+  .prices-fleet {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .price-bike .bike-body {
+    padding: 11px;
+  }
+}
+
+/* Téléphones */
+@media (max-width: 520px) {
+  .prices-intro,
+  .prices-fleet,
+  .prices-back,
+  .v13-three {
+    width: calc(100% - 24px);
+  }
+
+  .price-bike .bike-body {
+    padding: 8px;
+  }
+}
 </style>
 
 <script>
