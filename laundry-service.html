@@ -514,6 +514,36 @@ body {font-size:16px;}
 @media(min-width:850px){.v14-three{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:15px!important}}
 @media(max-width:849px){.v14-three{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}.v14-three .bike{padding:7px!important}.v14-three .bike-body{padding:7px!important}.v14-three .bike-image{max-height:120px}.v14-three .rates{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v14-three .rate strong{font-size:15px}.v14-three .rate em,.v14-three .rate small{font-size:9px}.v14-three .features{font-size:10px!important}.v14-three .bike-details{font-size:10px!important;padding:9px 4px!important}}
 @media(max-width:420px){.v14-three .rate strong{font-size:14px}.v14-three .rate span{font-size:9px}}
+/* T&Y — Centrer les 2 dernières photos de laverie */
+@media (min-width: 761px) {
+  .v13-laundry-gallery {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+
+  .v13-laundry-gallery > * {
+    grid-column: span 2;
+  }
+
+  .v13-laundry-gallery > :nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .v13-laundry-gallery > :nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+/* T&Y — Voile noir doux sur le titre et l'introduction */
+.v13-title,
+.v13-lead {
+  position: relative;
+  padding: 15px 24px !important;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,.70) 0%,
+    rgba(0,0,0,.40) 55%,
+    transparent 100%
+  ) !important;
+}
 
 <!-- T&Y Elite Mobility — Laundry EN harmonisation -->
 <style id="laundry-en-harmonisation">
