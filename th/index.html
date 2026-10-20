@@ -939,7 +939,46 @@ a[href^="tel:"] {
   content: none !important;
   display: none !important;
 }
-  
+
+<style id="thai-home-final-centering">
+/* Centrer les titres et les textes des huit scooters,
+   sans déplacer les photos ni les boutons. */
+#fleetCards .bike-body > h3,
+#fleetCards .bike-body > .features,
+#fleetCards .bike-body > .home-daily,
+#fleetCards .bike-body > .home-discount {
+  text-align: center !important;
+}
+
+/* Centrer les titres des cases après les scooters. */
+.details-grid .panel h2,
+.services .panel h2,
+.v13-home-services .panel h2 {
+  text-align: center !important;
+}
+
+/* Centrer le titre de la laverie sur tous les écrans. */
+.v14-home-laundry h2 {
+  text-align: center !important;
+}
+
+/* Ordinateur uniquement : texte centré et deuxième
+   logo à droite, dans la même case. */
+@media (min-width: 761px) {
+  .v14-home-laundry > div {
+    text-align: center !important;
+    min-width: 0;
+  }
+
+  .v14-home-laundry::after {
+    content: "";
+    display: block;
+    flex: 0 0 76px;
+    width: 76px;
+    height: 76px;
+    background: url("../IMGwashndry.jpg") center / contain no-repeat;
+  }
+} 
 </style><link href="https://tyelitemobility.github.io/tyelitemobility-site/index.html" hreflang="en" rel="alternate"/><link href="https://tyelitemobility.github.io/tyelitemobility-site/th/index.html" hreflang="th" rel="alternate"/><link href="https://tyelitemobility.github.io/tyelitemobility-site/th/index.html" rel="canonical"/></head>
 <body>
 <div class="topbar"><div class="wrap topinner"><a class="brand" href="index.html">T&amp;Y ELITE MOBILITY<small>บริการเช่ามอเตอร์ไซค์ · กรุงเทพฯ</small></a><nav aria-label="Main navigation" class="nav"><a href="index.html">หน้าแรก</a><a href="all-rental-prices.html">ราคาค่าเช่าทั้งหมด</a><a href="our-fleet.html">แกลเลอรีรถจริง</a><a href="rental-info.html">ข้อมูลการเช่า</a><a href="laundry-service.html">บริการซักผ้า</a><a href="riding-in-bangkok-guide.html">คู่มือขับขี่ในกรุงเทพฯ</a><a href="contact.html">ติดต่อเรา</a><span aria-label="Language" class="v14-lang"><a href="../index.html">EN</a><a aria-current="page" href="index.html">TH</a></span></nav></div></div>
