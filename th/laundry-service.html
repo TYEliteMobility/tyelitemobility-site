@@ -170,7 +170,24 @@
   }
 }
 </script>
+/* T&Y — Centrer les 2 dernières photos de laverie */
+@media (min-width: 761px) {
+  .v13-laundry-gallery {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
 
+  .v13-laundry-gallery > * {
+    grid-column: span 2;
+  }
+
+  .v13-laundry-gallery > :nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .v13-laundry-gallery > :nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
 <style id="rental-final-adjustments">
 /* Requested refinements — subtle dark veil behind title and subtitle. */
 .rental-page{position:relative;isolation:isolate}
