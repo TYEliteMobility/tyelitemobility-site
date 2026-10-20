@@ -867,4 +867,173 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <!-- FIN — ENGLISH HOMEPAGE FINISH -->
+
+<!-- T&Y ELITE MOBILITY — ENGLISH GOLD & TEXT CORRECTIONS -->
+<style id="ty-en-gold-corrections">
+
+/* OR CHAMPAGNE MÉTALLIQUE AVEC LUEUR */
+:root {
+  --ty-certified-gold: #F4D98C;
+  --ty-gold-gradient: linear-gradient(
+    175deg,
+    #fffdf0 0%,
+    #fff8d4 12%,
+    #f8ce69 27%,
+    #ad731f 38%,
+    #fffef1 47%,
+    #fff5c1 55%,
+    #edb94e 72%,
+    #fff4bf 85%,
+    #b7812c 100%
+  );
+}
+
+/* Titres : majuscules, or métallique et lueur */
+.intro h1,
+.heading h2,
+.panel h2,
+.location h2 {
+  text-transform: uppercase !important;
+}
+
+.intro h1,
+.heading h2,
+.panel h2,
+.location h2,
+.legal > strong,
+.legal p:last-child {
+  color: var(--ty-certified-gold) !important;
+  background-image: var(--ty-gold-gradient) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter:
+    drop-shadow(0 1px 1px #100b06)
+    drop-shadow(0 0 3px rgba(255,230,154,.65))
+    drop-shadow(0 0 8px rgba(255,199,76,.26)) !important;
+}
+
+/* Nom principal légèrement plus lumineux */
+.intro h1 {
+  filter:
+    drop-shadow(0 1px 1px #100b06)
+    drop-shadow(0 0 4px rgba(255,239,186,.88))
+    drop-shadow(0 0 12px rgba(255,209,105,.48)) !important;
+}
+
+/* Numéro de téléphone : même or métallique */
+.phone a,
+.legal a[href^="tel:"] {
+  color: var(--ty-certified-gold) !important;
+  background-image: var(--ty-gold-gradient) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter:
+    drop-shadow(0 1px 1px #100b06)
+    drop-shadow(0 0 3px rgba(255,230,154,.65))
+    drop-shadow(0 0 8px rgba(255,199,76,.26)) !important;
+}
+
+/* NOMS DES MOTOS : même couleur que les options */
+.fleet .bike h3,
+.fleet .bike h3 .v14-model-line {
+  color: #e0d5c3 !important;
+  -webkit-text-fill-color: #e0d5c3 !important;
+  background: none !important;
+  filter: none !important;
+}
+
+/* Exception : conserver la mention Iron Man distinctive */
+.fleet #honda-adv-160-iron-man .v14-model-line {
+  color: #D99A70 !important;
+  -webkit-text-fill-color: #D99A70 !important;
+}
+
+/* Prix et /day : même or métallique */
+.fleet .home-daily,
+.fleet .home-daily small {
+  color: var(--ty-certified-gold) !important;
+  background-image: var(--ty-gold-gradient) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter:
+    drop-shadow(0 1px 1px #100b06)
+    drop-shadow(0 0 3px rgba(255,230,154,.55))
+    drop-shadow(0 0 7px rgba(255,199,76,.24)) !important;
+}
+
+/* Boutons des cartes scooters : or lumineux */
+.fleet .bike-details {
+  color: var(--ty-certified-gold) !important;
+  -webkit-text-fill-color: var(--ty-certified-gold) !important;
+  background: rgba(0,0,0,.32) !important;
+  border-color: rgba(244,217,140,.7) !important;
+  text-shadow: 0 0 5px rgba(255,219,131,.35) !important;
+}
+
+/* Conditions générales : liens blancs */
+.conditions a {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: 0 1px 3px #000 !important;
+}
+
+/* QUATRE CASES : or réservé aux titres */
+.details-grid .panel h2,
+.services .panel h2 {
+  color: var(--ty-certified-gold) !important;
+  background-image: var(--ty-gold-gradient) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter:
+    drop-shadow(0 1px 1px #100b06)
+    drop-shadow(0 0 3px rgba(255,230,154,.65))
+    drop-shadow(0 0 8px rgba(255,199,76,.26)) !important;
+}
+
+.details-grid .panel p,
+.details-grid .panel li,
+.details-grid .panel strong,
+.services .panel p,
+.services .panel strong,
+.services .panel a {
+  color: #e0d5c3 !important;
+  -webkit-text-fill-color: #e0d5c3 !important;
+  background: none !important;
+  filter: none !important;
+}
+
+/* Horaires : même couleur que l'adresse */
+.location p strong {
+  color: #e0d5c3 !important;
+  -webkit-text-fill-color: #e0d5c3 !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.95) !important;
+}
+
+/* Pied de page : textes et liens */
+.legal > strong,
+.legal p:last-child {
+  color: var(--ty-certified-gold) !important;
+}
+
+.legal p:not(:last-child),
+.legal a:not([href^="tel:"]) {
+  color: #ded3c1 !important;
+  -webkit-text-fill-color: #ded3c1 !important;
+  background: none !important;
+  filter: none !important;
+}
+
+</style>
+<!-- END ENGLISH GOLD & TEXT CORRECTIONS -->
 </body></html>
