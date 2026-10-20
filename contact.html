@@ -673,6 +673,45 @@ footer.legal a {
     font-size: 17px !important;
   }
 }
+/* CONTACT EN — Voile noir discret derrière le titre */
+
+.v13-page > .v13-title,
+.v13-page > .v13-lead {
+  position: relative;
+  z-index: 1;
+}
+
+.v13-page {
+  position: relative;
+  isolation: isolate;
+}
+
+.v13-page::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(950px, 100%);
+  height: 135px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,.70) 0%,
+    rgba(0,0,0,.43) 48%,
+    rgba(0,0,0,0) 100%
+  );
+}
+/* CONTACT EN — Nom de l'entreprise identique au texte du footer */
+
+footer.legal strong {
+  color: #DED3C1 !important;
+  -webkit-text-fill-color: #DED3C1 !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
 </style><link href="https://tyelitemobility.github.io/tyelitemobility-site/contact.html" hreflang="en" rel="alternate"/><link href="https://tyelitemobility.github.io/tyelitemobility-site/th/contact.html" hreflang="th" rel="alternate"/><link href="https://tyelitemobility.github.io/tyelitemobility-site/contact.html" rel="canonical"/></head>
 <body>
 <div class="topbar"><div class="wrap topinner"><a class="brand" href="index.html">T&amp;Y ELITE MOBILITY<small>MOTORBIKE RENTAL · BANGKOK</small></a><nav aria-label="Main navigation" class="nav"><a href="index.html">Home</a><a href="all-rental-prices.html">All Prices</a><a href="our-fleet.html">Real Fleet Gallery</a><a href="rental-info.html">Rental Info</a><a href="laundry-service.html">Laundry</a><a href="riding-in-bangkok-guide.html">Bangkok Guide</a><a href="contact.html">Contact</a><span aria-label="Language" class="v14-lang"><a aria-current="page" href="contact.html">EN</a><a href="th/contact.html">TH</a></span></nav></div></div>
