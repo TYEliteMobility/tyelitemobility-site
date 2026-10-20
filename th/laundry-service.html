@@ -190,4 +190,42 @@
 
 </style>
 <!-- Fin centrage laverie TH -->
+ 
+<!-- T&Y Elite Mobility — Navigation active -->
+<style>
+/* Page actuellement consultée */
+.nav > a.nav-active {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+  background: rgba(244,217,140,0.10);
+  border: 1px solid rgba(244,217,140,0.75);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 520px) {
+  .nav > a.nav-active {
+    padding: 4px 6px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll(".nav > a").forEach(function (link) {
+    const linkPage = new URL(link.href).pathname.split("/").pop();
+
+    if (linkPage === currentPage) {
+      link.classList.add("nav-active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
+});
+</script>
+<!-- Fin navigation active -->
 </body></html>
