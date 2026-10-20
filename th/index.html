@@ -996,4 +996,42 @@ a[href^="tel:"] {
 <section class="wrap services"><article class="panel"><h2>บริการส่งรถถึงโรงแรมและที่พัก</h2><p>มีบริการในกรุงเทพฯ โดยต้องยืนยันพื้นที่และเวลาล่วงหน้า</p><p><strong>ส่งรถหรือรับรถเที่ยวเดียว:</strong> 800 THB</p><p><strong>ส่งและรับรถ:</strong> 1,500 THB</p><p><strong>ส่งและรับรถฟรี</strong> สำหรับการเช่าเกิน 15 วัน</p></article><article class="panel"><h2 class="transfer-gold-title">บริการรถรับส่งส่วนตัว</h2><p>บริการรถรับส่งสนามบิน โรงแรม และต่างจังหวัดผ่านพาร์ตเนอร์คนขับมืออาชีพ รวมถึง BKK, DMK, พัทยา หัวหิน และอื่น ๆ</p><a href="rental-info.html#private-transfers">ดูบริการรถรับส่ง →</a></article></section><section class="wrap v13-home-services"><article class="panel laundry v14-home-laundry" id="laundry"><img alt="Wash and dry laundry service logo" src="../IMGwashndry.jpg"/><div><h2>บริการซักผ้า</h2><p>ฝากซักผ้าและรับกลับแบบสะอาด พับและแพ็กเรียบร้อย มีบริการรับและส่งผ้าตามนัด</p><a href="laundry-service.html">ดูราคาซักผ้าและรูปภาพ →</a></div></article></section>
 <section class="location" id="location"><div class="wrap"><h2>ที่ตั้งร้านในกรุงเทพฯ</h2><p>62/3 ถนนเพชรบุรี, แขวงถนนเพชรบุรี,<br/>เขตราชเทวี กรุงเทพมหานคร 10400 ประเทศไทย</p><p><strong>เปิดทุกวัน · 10:00 – 8:00 น.</strong></p><a href="https://maps.app.goo.gl/P8gFyGbfRBjKZDBT6" rel="noopener" target="_blank"><img alt="Map of T&amp;Y Elite Mobility and nearby Bangkok hotels" class="map" src="../Map1 2.jpg"/></a><a class="btn gold" href="https://maps.app.goo.gl/P8gFyGbfRBjKZDBT6" rel="noopener" target="_blank">เปิด Google Maps</a></div></section></main>
 <footer class="legal"><strong>T&amp;Y Elite Mobility Co., Ltd.</strong><p>บริการเช่ามอเตอร์ไซค์ · กรุงเทพฯ ประเทศไทย</p><p>โทรศัพท์ / WhatsApp: <a href="tel:+66967718495">+66 96 771 8495</a></p><p><a href="../CGL Eng.pdf" rel="noopener" target="_blank">เงื่อนไขการเช่า (ภาษาอังกฤษ)</a> · <a href="../CGL Thai .pdf" rel="noopener" target="_blank">ข้อกำหนดและเงื่อนไขการเช่า (Thai)</a></p><p>© 2026 T&amp;Y Elite Mobility Co., Ltd. สงวนลิขสิทธิ์</p></footer>
+
+<!-- T&Y Elite Mobility — Navigation active -->
+<style>
+/* Page actuellement consultée */
+.nav > a.nav-active {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+  background: rgba(244,217,140,0.10);
+  border: 1px solid rgba(244,217,140,0.75);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 520px) {
+  .nav > a.nav-active {
+    padding: 4px 6px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll(".nav > a").forEach(function (link) {
+    const linkPage = new URL(link.href).pathname.split("/").pop();
+
+    if (linkPage === currentPage) {
+      link.classList.add("nav-active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
+});
+</script>
+<!-- Fin navigation active -->
 </body></html>
