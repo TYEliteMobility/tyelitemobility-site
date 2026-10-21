@@ -681,6 +681,61 @@ body {font-size:16px;}
   text-shadow: none !important;
   filter: none !important;
 }
+/* ==========================================
+   T&Y — BANGKOK GUIDE EN
+   Harmonisation définitive du pied de page
+   ========================================== */
+
+/* Pied de page : marbre visible, sans voile noir */
+.legal {
+  background: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  margin-top: 0 !important;
+  border-top: 1px solid rgba(229,189,97,.5) !important;
+}
+
+/* Nom de l'entreprise : même ivoire que la ligne dessous */
+.legal > strong {
+  color: #ded3c1 !important;
+  -webkit-text-fill-color: #ded3c1 !important;
+  background: none !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* Texte ordinaire du pied de page */
+.legal p {
+  color: #ded3c1 !important;
+}
+
+/* Liens des conditions générales : ivoire */
+.legal a:not([href^="tel:"]) {
+  color: #ded3c1 !important;
+  -webkit-text-fill-color: #ded3c1 !important;
+  background: none !important;
+  filter: none !important;
+}
+
+/* Téléphone et copyright : or champagne validé */
+.legal a[href^="tel:"],
+.legal p:last-child {
+  color: #F4D98C !important;
+  background-image: linear-gradient(
+    180deg,
+    #FFF4D1 0%,
+    #F6DE9D 45%,
+    #E9BF63 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
 </style>
 </head>
 
