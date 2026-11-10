@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/navigation.css">
-<script src="/navigation.js" defer></script>
 <head>
 <style id="contact-final-harmony">
 /* Police harmonisée avec les pages validées */
@@ -87,38 +85,11 @@
   margin: 0 auto;
 }
 
-/* Navigation active */
-.nav > a.nav-active {
-  color: #F4D98C !important;
-  -webkit-text-fill-color: #F4D98C !important;
-  background: rgba(244,217,140,.10);
-  border: 1px solid rgba(244,217,140,.75);
-  border-radius: 6px;
-  padding: 5px 8px;
-  font-weight: 700;
-}
-
 @media (max-width:520px) {
   .brand { font-size: 17px; }
-  .nav > a.nav-active { padding: 4px 6px; }
 }
 </style>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
-
-  document.querySelectorAll(".nav > a").forEach(function (link) {
-    const linkPage = new URL(link.href).pathname.split("/").pop();
-
-    if (linkPage === currentPage) {
-      link.classList.add("nav-active");
-      link.setAttribute("aria-current", "page");
-    }
-  });
-});
-</script>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Contact &amp; Location | T&amp;Y Elite Mobility Bangkok</title>
 <meta content="Contact T&amp;Y Elite Mobility in Ratchathewi Bangkok by WhatsApp, LINE or Facebook. Open our exact shop location on Google Maps. Laundry and private transfers available." name="description"/>
@@ -523,7 +494,6 @@ body {font-size:16px;}
 .bike-image{background:transparent!important}
 .rate strong{margin-bottom:0!important;line-height:1.1!important}
 .rate em{margin-top:0!important;line-height:1.1!important}
-.nav a[href="riding-in-bangkok-guide.html"]{color:#f4d18a}
 .guide-main{max-width:920px;margin:30px auto 65px}
 .guide-kicker{text-align:center;text-transform:uppercase;letter-spacing:.19em;color:#e7c47a;font-size:12px}
 .guide-title{text-align:center;font-family:Cinzel,Georgia,serif;font-size:clamp(29px,4vw,48px);line-height:1.16;margin:12px auto;color:#f4d58f}
@@ -618,12 +588,6 @@ body {font-size:16px;}
   color: #F3E8D4 !important;
   -webkit-text-fill-color: #F3E8D4 !important;
   background: none;
-}
-
-.topbar .nav > a.nav-active {
-  color: #F4D98C !important;
-  -webkit-text-fill-color: #F4D98C !important;
-  background: rgba(244,217,140,.10) !important;
 }
 
 /* Boutons dorés : texte noir */
@@ -733,4 +697,16 @@ footer.legal strong {
 <a aria-label="Open T&amp;Y Elite Mobility shop on Google Maps" class="v13-map" href="https://maps.app.goo.gl/UzGN9PTT4Vc7S91KA" rel="noopener" target="_blank"><img alt="Map showing T&amp;Y Elite Mobility in Ratchathewi Bangkok — tap to open Google Maps" src="Map1 2.jpg"/></a>
 <div class="v13-two"><div class="v13-panel"><h3>Private Transfers</h3><p>Airport, hotel and intercity transfers arranged with our professional driver partner.</p><a href="rental-info.html#private-transfers">Discover private transfers →</a></div></div><div class="v13-center"><a class="btn" href="index.html">← Home</a></div></main>
 <footer class="legal"><strong>T&amp;Y Elite Mobility Co., Ltd.</strong><p>Motorbike &amp; Scooter Rental · Bangkok, Thailand</p><p>Phone / WhatsApp: <a href="tel:+66967718495">+66 96 771 8495</a></p><p><a href="CGL Eng.pdf" rel="noopener" target="_blank">Rental Terms &amp; Conditions (English)</a> · <a href="CGL Thai .pdf" rel="noopener" target="_blank">ข้อกำหนดและเงื่อนไขการเช่า (Thai)</a></p><p>© 2026 T&amp;Y Elite Mobility Co., Ltd. All rights reserved.</p></footer>
+<style>
+/* CONTACT EN — Onglet actif, méthode Bangkok Guide */
+.nav a[href="contact.html"] {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+  background: rgba(244,217,140,.10) !important;
+  border: 1px solid rgba(244,217,140,.75) !important;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+</style>
 </body></html>
