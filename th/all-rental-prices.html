@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="th">
-<link rel="stylesheet" href="/navigation.css">
-<script src="/navigation.js" defer></script>
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -131,22 +129,15 @@
 
 <!-- T&Y Elite Mobility — Navigation active -->
 <style>
-/* Page actuellement consultée */
-.nav > a.nav-active {
+/* ALL PRICES TH — Onglet actif, méthode Bangkok Guide */
+.nav > a[href="all-rental-prices.html"] {
   color: #F4D98C !important;
   -webkit-text-fill-color: #F4D98C !important;
-  background: rgba(244,217,140,0.10);
-  border: 1px solid rgba(244,217,140,0.75);
+  background: rgba(244,217,140,.10) !important;
+  border: 1px solid rgba(244,217,140,.75) !important;
   border-radius: 6px;
   padding: 5px 8px;
   font-weight: 700;
-}
-
-/* Adaptation aux petits écrans */
-@media (max-width: 520px) {
-  .nav > a.nav-active {
-    padding: 4px 6px;
-  }
 }
 /* T&Y — Disposition aérée identique à la version anglaise */
 
@@ -232,20 +223,4 @@
 }
 </style>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
-
-  document.querySelectorAll(".nav > a").forEach(function (link) {
-    const linkPage = new URL(link.href).pathname.split("/").pop();
-
-    if (linkPage === currentPage) {
-      link.classList.add("nav-active");
-      link.setAttribute("aria-current", "page");
-    }
-  });
-});
-</script>
-<!-- Fin navigation active -->
 </body></html>
