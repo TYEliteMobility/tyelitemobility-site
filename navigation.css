@@ -1,0 +1,17 @@
+
+/* T&Y Elite Mobility — Active navigation */
+.nav > a.nav-active {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+  background: rgba(244,217,140,.10) !important;
+  border: 1px solid rgba(244,217,140,.75) !important;
+  border-radius: 6px !important;
+  padding: 5px 8px !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 520px) {
+  .nav > a.nav-active {
+    padding: 4px 6px !important;
+  }
+}
