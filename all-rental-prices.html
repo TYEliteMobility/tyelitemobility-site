@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -1148,22 +1147,7 @@ document.addEventListener("DOMContentLoaded", function () {
       heading.innerHTML = icons[index] + title;
     });
 
-  /* Mettre en évidence All Prices dans la navigation */
-  const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
-
-  document.querySelectorAll(".nav > a").forEach(function (link) {
-
-    const linkPage =
-      new URL(link.href).pathname.split("/").pop();
-
-    if (linkPage === currentPage) {
-      link.classList.add("nav-active");
-      link.setAttribute("aria-current", "page");
-    }
-
-  });
-
+ 
 });
 </script>
 <!-- Fin harmonisation All Prices EN -->
@@ -1212,20 +1196,58 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 </style>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
-
-  document.querySelectorAll(".nav > a").forEach(function (link) {
-    const linkPage = new URL(link.href).pathname.split("/").pop();
-
-    if (linkPage === currentPage) {
-      link.classList.add("nav-active");
-      link.setAttribute("aria-current", "page");
-    }
-  });
-});
-</script>
 <!-- Fin navigation active -->
+
+<style>
+.nav > a.nav-active {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+  background: rgba(244,217,140,.10) !important;
+  border: 1px solid rgba(244,217,140,.75) !important;
+  border-radius: 6px !important;
+  padding: 5px 8px !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width:520px) {
+  .nav > a.nav-active {
+    padding: 4px 6px !important;
+  }
+}
+</style>
+
+<script>
+(function () {
+  function normalize(path) {
+    let p = decodeURIComponent(path);
+    p = p.replace(/\/index\.html$/i, "/");
+    p = p.replace(/\/+$/, "");
+    return p || "/";
+  }
+
+  function updateNavigation() {
+    const current = normalize(window.location.pathname);
+
+    document.querySelectorAll(".nav > a").forEach(function (link) {
+      const target = normalize(new URL(link.href).pathname);
+      const active = current === target;
+
+      link.classList.toggle("nav-active", active);
+
+      if (active) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateNavigation);
+  } else {
+    updateNavigation();
+  }
+})();
+</script>
+
 </body></html>
