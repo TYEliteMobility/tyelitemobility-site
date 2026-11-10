@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<link rel="stylesheet" href="/navigation.css">
-<script src="/navigation.js" defer></script>
 <head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Rental Information &amp; Private Transfers | T&amp;Y Elite Mobility</title>
@@ -400,7 +398,6 @@ body {font-size:16px;}
 .bike-image{background:transparent!important}
 .rate strong{margin-bottom:0!important;line-height:1.1!important}
 .rate em{margin-top:0!important;line-height:1.1!important}
-.nav a[href="riding-in-bangkok-guide.html"]{color:#f4d18a}
 .guide-main{max-width:920px;margin:30px auto 65px}
 .guide-kicker{text-align:center;text-transform:uppercase;letter-spacing:.19em;color:#e7c47a;font-size:12px}
 .guide-title{text-align:center;font-family:Cinzel,Georgia,serif;font-size:clamp(29px,4vw,48px);line-height:1.16;margin:12px auto;color:#f4d58f}
@@ -550,11 +547,11 @@ body {
 }
 
 /* Onglet Rental Info actif */
-.nav > a.nav-active {
+.nav > a[href="rental-info.html"] {
   color: #F4D98C !important;
   -webkit-text-fill-color: #F4D98C !important;
-  background: rgba(244,217,140,.10);
-  border: 1px solid rgba(244,217,140,.75);
+  background: rgba(244,217,140,.10) !important;
+  border: 1px solid rgba(244,217,140,.75) !important;
   border-radius: 6px;
   padding: 5px 8px;
   font-weight: 700 !important;
@@ -927,7 +924,7 @@ main.rental-page::before {
     font-size: 11px !important;
   }
 
-  .nav > a.nav-active {
+  .nav > a[href="rental-info.html"] {
     padding: 4px 6px;
   }
 
@@ -1027,18 +1024,6 @@ document.addEventListener("DOMContentLoaded", function () {
     heading.prepend(icon);
   });
 
-  /* Surligne la page actuelle dans la navigation */
-  const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
-
-  document.querySelectorAll(".nav > a").forEach(function (link) {
-    const linkPage = new URL(link.href).pathname.split("/").pop();
-
-    if (linkPage === currentPage) {
-      link.classList.add("nav-active");
-      link.setAttribute("aria-current", "page");
-    }
-  });
 });
 </script>
 <!-- Fin harmonisation Rental Info EN -->
