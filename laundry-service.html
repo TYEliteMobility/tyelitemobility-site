@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" href="/favicon-laundry.png?v=1">
-<link rel="stylesheet" href="/navigation.css">
-<script src="/navigation.js" defer></script>
 <head>
+<link rel="icon" type="image/png" href="/favicon-laundry.png?v=2">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Laundry Service Bangkok — 100 THB/kg | T&amp;Y Elite Mobility</title>
@@ -75,7 +73,16 @@
     .nav { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px 17px; }
     .nav>a { color:#f3e8d4; text-decoration:none; font-size:12px; font-weight:600; white-space:nowrap; }
     .nav>a:hover { color:#ffda81; }
-    .nav>a.nav-active { color:#f4d98c; background:rgba(244,217,140,.10); border:1px solid rgba(244,217,140,.75); border-radius:6px; padding:5px 8px; font-weight:700; }
+    /* LAUNDRY EN — Onglet actif */
+    .nav > a[href="laundry-service.html"] {
+      color: #F4D98C !important;
+      -webkit-text-fill-color: #F4D98C !important;
+      background: rgba(244,217,140,.10) !important;
+      border: 1px solid rgba(244,217,140,.75);
+      border-radius: 6px;
+      padding: 5px 8px;
+      font-weight: 700;
+    }
     .v14-lang { display:inline-flex; align-items:center; gap:4px; margin-left:10px; white-space:nowrap; }
     .v14-lang a { padding:5px 8px; border:1px solid #b18a4a; border-radius:5px; color:#e9ce94; text-decoration:none; font-size:12px; }
     .v14-lang a[aria-current="page"] { background:rgba(200,155,76,.22); font-weight:800; }
@@ -154,7 +161,7 @@
         <a href="all-rental-prices.html">All Prices</a>
         <a href="our-fleet.html">Real Fleet Gallery</a>
         <a href="rental-info.html">Rental Info</a>
-        <a href="laundry-service.html" class="nav-active" aria-current="page">Laundry</a>
+        <a href="laundry-service.html" aria-current="page">Laundry</a>
         <a href="riding-in-bangkok-guide.html">Bangkok Guide</a>
         <a href="contact.html">Contact</a>
         <span aria-label="Language" class="v14-lang"><a aria-current="page" href="laundry-service.html">EN</a><a href="th/laundry-service.html">TH</a></span>
