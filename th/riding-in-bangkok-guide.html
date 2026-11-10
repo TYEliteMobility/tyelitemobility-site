@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="th">
-<link rel="stylesheet" href="/navigation.css">
-<script src="/navigation.js" defer></script>
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -203,27 +201,27 @@
 </main>
 <footer class="legal"><strong>T&amp;Y Elite Mobility Co., Ltd.</strong><p>บริการเช่ามอเตอร์ไซค์ · กรุงเทพฯ ประเทศไทย</p><p>โทรศัพท์ / WhatsApp: <a href="tel:+66967718495">+66 96 771 8495</a></p><p><a href="../CGL Eng.pdf" rel="noopener" target="_blank">เงื่อนไขการเช่า (ภาษาอังกฤษ)</a> · <a href="../CGL Thai .pdf" rel="noopener" target="_blank">ข้อกำหนดและเงื่อนไขการเช่า (Thai)</a></p><p>© 2026 T&amp;Y Elite Mobility Co., Ltd. สงวนลิขสิทธิ์</p></footer>
 
-<!-- T&Y Elite Mobility — Navigation active -->
+<!-- T&Y Elite Mobility — Bangkok Guide TH -->
 <style>
-/* Page actuellement consultée */
-.nav > a.nav-active {
+/* Onglet actif : Bangkok Guide */
+.nav > a[href="riding-in-bangkok-guide.html"] {
   color: #F4D98C !important;
   -webkit-text-fill-color: #F4D98C !important;
-  background: rgba(244,217,140,0.10);
-  border: 1px solid rgba(244,217,140,0.75);
+  background: rgba(244,217,140,.10) !important;
+  border: 1px solid rgba(244,217,140,.75) !important;
   border-radius: 6px;
   padding: 5px 8px;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 /* Adaptation aux petits écrans */
 @media (max-width: 520px) {
-  .nav > a.nav-active {
+  .nav > a[href="riding-in-bangkok-guide.html"] {
     padding: 4px 6px;
   }
 }
 
-/* Bangkok Guide — Textes des 4 cases en couleur paragraphe */
+/* Textes des 4 cases en couleur paragraphe */
 .guide-contents .guide-tile strong,
 .guide-contents .guide-tile small {
   color: #e0d8cb !important;
@@ -235,6 +233,7 @@
   text-shadow: none !important;
   filter: none !important;
 }
+
 /* Sous-titre du guide — couleur des paragraphes */
 .guide-title span {
   color: #ddd0b9 !important;
@@ -244,21 +243,5 @@
   filter: none !important;
 }
 </style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
-
-  document.querySelectorAll(".nav > a").forEach(function (link) {
-    const linkPage = new URL(link.href).pathname.split("/").pop();
-
-    if (linkPage === currentPage) {
-      link.classList.add("nav-active");
-      link.setAttribute("aria-current", "page");
-    }
-  });
-});
-</script>
-<!-- Fin navigation active -->
+<!-- Fin Bangkok Guide TH -->
 </body></html>
