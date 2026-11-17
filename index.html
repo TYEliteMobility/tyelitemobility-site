@@ -1706,6 +1706,44 @@ body,
 }
 
 </style>
+<style id="mobile-header-compact-final">
+/* En-tête plus compact : mobile uniquement */
+@media (max-width: 520px) {
 
+  /* Réduire les marges verticales */
+  .topinner {
+    padding-top: 7px !important;
+    padding-bottom: 6px !important;
+  }
+
+  /* Rapprocher le logo et le nom */
+  .topbar .brand {
+    margin: 0 !important;
+  }
+
+  /* Rapprocher les lignes de navigation */
+  .topbar .nav {
+    margin-top: 5px !important;
+    row-gap: 3px !important;
+    column-gap: 10px !important;
+  }
+
+  /* Réduire légèrement la hauteur des onglets */
+  .topbar .nav > a {
+    line-height: 1.2 !important;
+  }
+
+  /* Rapprocher les boutons de langue */
+  .topbar .v14-lang {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .topbar .v14-lang a {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+  }
+}
+</style>
 
 </body></html>
