@@ -519,12 +519,17 @@ body {font-size:16px;}
 <section class="wrap services"><article class="panel"><h2>Hotel &amp; Home Delivery</h2><p>Available within Bangkok, subject to confirmation.</p><p><strong>Delivery or pickup:</strong> 800 THB</p><p><strong>Delivery and pickup:</strong> 1,500 THB</p><p><strong>Free delivery and pickup</strong> for rentals over 15 days.</p></article><article class="panel"><h2 class="transfer-gold-title">Private Transfers</h2><p>Airport, hotel and intercity transfers arranged with our professional driver partner. BKK, DMK, Pattaya, Hua Hin and more.</p><a href="rental-info.html#private-transfers">Explore private transfers →</a></article></section>
 <section class="wrap v13-home-services">
   <article class="panel laundry v14-home-laundry" id="laundry-partner">
-    <img alt="T&Y Elite Laundry Service logo" src="IMGwashndry.jpg"/>
+   <a class="laundry-logo-link" href="https://tyelitelaundry.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Visit T&Y Elite Laundry Service">
+     <img alt="T&Y Elite Laundry Service logo" src="IMGwashndry.jpg"/>
+   </a>
     <div>
       <h2>Our Laundry Service</h2>
       <p>Need laundry cleaning service in Bangkok ? Visit T&amp;Y Elite Laundry Service for washing, drying, folding and hotel or home collection and delivery.</p>
       <a href="https://tyelitelaundry.pages.dev/" target="_blank" rel="noopener noreferrer">Visit T&amp;Y Elite Laundry Service →</a>
     </div>
+    <a class="laundry-logo-link laundry-logo-right" href="https://tyelitelaundry.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Visit T&Y Elite Laundry Service">
+      <img src="IMGwashndry.jpg" alt="T&Y Elite Laundry Service logo"/>
+    </a>
   </article>
 </section>
 
@@ -1223,6 +1228,11 @@ body,
 <!-- End exact Thai gold -->
 
 <!-- T&Y — Final English homepage refinements -->
+/* Lien laverie : même or champagne que le titre */
+.v14-home-laundry a {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+}
 <style id="ty-english-home-final">
 
 /* 1. Bangkok Riding Guide : lien blanc */
@@ -1239,17 +1249,6 @@ body,
   .v14-home-laundry > div {
     text-align: center !important;
     min-width: 0;
-  }
-
-  .v14-home-laundry::after {
-    content: "";
-    display: block;
-    flex: 0 0 76px;
-    width: 76px;
-    height: 76px;
-    background:
-      url("IMGwashndry.jpg")
-      center / contain no-repeat;
   }
 }
 
@@ -1401,6 +1400,40 @@ body,
   .mobility-logo-footer {
     width: 36px;
     height: 36px;
+  }
+}
+/* Deux logos de laverie cliquables */
+.v14-home-laundry .laundry-logo-link {
+  display: block;
+  flex: 0 0 76px;
+  width: 76px;
+  height: 76px;
+  margin: 0;
+}
+
+.v14-home-laundry .laundry-logo-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Deuxième logo uniquement sur ordinateur */
+.v14-home-laundry .laundry-logo-right {
+  display: none;
+}
+
+@media (min-width: 761px) {
+  .v14-home-laundry .laundry-logo-right {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .v14-home-laundry .laundry-logo-link {
+    flex-basis: 60px;
+    width: 60px;
+    height: 64px;
   }
 }
 </style>
