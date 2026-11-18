@@ -8,14 +8,15 @@
 .ty-shared-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 13px}
 .ty-shared-nav-link{font:600 12px/1.3 'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif;text-decoration:none!important;white-space:nowrap;color:#f3e8d4!important;-webkit-text-fill-color:#f3e8d4!important;border:1px solid transparent;border-radius:6px;padding:5px 8px}
 .ty-shared-nav-link:hover{color:#ffda81!important;-webkit-text-fill-color:#ffda81!important}
-.ty-shared-nav-link.is-active {
+.ty-shared-nav-link.is-active,
+.ty-shared-nav-link[aria-current="page"] {
   color: #F4D98C !important;
   -webkit-text-fill-color: #F4D98C !important;
   background: rgba(244,217,140,.10) !important;
   border: 1px solid rgba(244,217,140,.75) !important;
   border-radius: 6px;
   padding: 5px 8px;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .ty-label-mobile{display:none}.ty-shared-lang{display:inline-flex;align-items:center;gap:5px;margin-left:4px;white-space:nowrap}
 .ty-shared-lang a{display:inline-block;padding:5px 8px;border:1px solid #b18a4a;border-radius:5px;color:#e9ce94!important;-webkit-text-fill-color:#e9ce94!important;text-decoration:none!important;font:600 12px/1.3 'Plus Jakarta Sans',sans-serif}
