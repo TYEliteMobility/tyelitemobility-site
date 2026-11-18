@@ -1,0 +1,37 @@
+/* T&Y Elite Mobility — shared header/footer. Scoped: no changes to scooter cards. */
+.ty-shared-header,.ty-shared-footer,.ty-shared-header *,.ty-shared-footer *{box-sizing:border-box}
+.ty-shared-header{position:relative;z-index:10;border-bottom:1px solid rgba(229,189,97,.55);background:rgba(8,9,11,.96);box-shadow:0 5px 24px rgba(0,0,0,.45);color:#f3e8d4}
+.ty-shared-header-inner{width:min(1120px,calc(100% - 36px));margin:auto;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0}
+.ty-shared-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;text-decoration:none!important;color:#F5EDE0!important;-webkit-text-fill-color:#F5EDE0!important;font:400 21px/1.25 'Marcellus',Georgia,serif;letter-spacing:.04em}
+.ty-shared-brand img{width:46px;height:46px;object-fit:contain;flex-shrink:0}
+.ty-shared-brand-text{display:block}.ty-shared-brand small{display:block;font:600 10px/1.3 'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif;letter-spacing:.12em;color:#D9C79C!important;-webkit-text-fill-color:#D9C79C!important}
+.ty-shared-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 13px}
+.ty-shared-nav-link{font:600 12px/1.3 'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif;text-decoration:none!important;white-space:nowrap;color:#f3e8d4!important;-webkit-text-fill-color:#f3e8d4!important;border:1px solid transparent;border-radius:6px;padding:5px 8px}
+.ty-shared-nav-link:hover{color:#ffda81!important;-webkit-text-fill-color:#ffda81!important}
+.ty-shared-nav-link.is-active{color:#F4D98C!important;-webkit-text-fill-color:#F4D98C!important;background:rgba(244,217,140,.10);border-color:rgba(244,217,140,.75);font-weight:700}
+.ty-label-mobile{display:none}.ty-shared-lang{display:inline-flex;align-items:center;gap:5px;margin-left:4px;white-space:nowrap}
+.ty-shared-lang a{display:inline-block;padding:5px 8px;border:1px solid #b18a4a;border-radius:5px;color:#e9ce94!important;-webkit-text-fill-color:#e9ce94!important;text-decoration:none!important;font:600 12px/1.3 'Plus Jakarta Sans',sans-serif}
+.ty-shared-lang a[aria-current="page"]{background:rgba(200,155,76,.22);font-weight:800}
+.ty-shared-footer{position:relative;background:#08090b;border-top:1px solid rgba(229,189,97,.5);color:#ded3c1;text-align:center;padding:28px 16px 32px;margin-top:35px;font-family:'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif}
+.ty-shared-footer-inner{position:relative;width:min(1120px,100%);margin:auto;display:flex;align-items:center;justify-content:center}
+.ty-shared-footer-content{width:100%;text-align:center;font-size:16px;line-height:1.55}
+.ty-shared-footer-content p{margin:9px 0}
+.ty-shared-company{display:block;font-size:19px;font-weight:800;line-height:1.4;color:#F4D98C!important;background-image:linear-gradient(180deg,#FFF4D1 0%,#F6DE9D 45%,#E9BF63 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;filter:drop-shadow(0 0 3px rgba(255,223,148,.30))}
+.ty-shared-footer a{color:#ded3c1!important;-webkit-text-fill-color:#ded3c1!important;text-decoration:underline}
+.ty-shared-footer a[href^="tel:"]{color:#F4D98C!important;-webkit-text-fill-color:#F4D98C!important}
+.ty-shared-copyright{color:#F4D98C!important}
+.ty-shared-footer-logo{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;object-fit:contain}.ty-shared-footer-left{left:0}.ty-shared-footer-right{right:0}
+@media(max-width:700px){
+ .ty-shared-header-inner{display:block;text-align:center;padding:9px 0;width:calc(100% - 20px)}
+ .ty-shared-brand{width:fit-content;max-width:100%;margin:0 auto;justify-content:center;text-align:center;font-size:clamp(15px,4.3vw,20px)}
+ .ty-shared-brand small{font-size:clamp(8px,2.1vw,10px);letter-spacing:.08em}
+ .ty-shared-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:3px;row-gap:7px;justify-items:center;align-items:center;margin-top:9px}
+ .ty-shared-nav-link{min-width:0;max-width:100%;font-size:clamp(9px,2.45vw,12px);line-height:1.25;padding:5px 2px;text-align:center;white-space:nowrap}
+ .ty-label-desktop{display:none}.ty-label-mobile{display:inline}
+ .ty-shared-nav-link:nth-child(1){grid-column:1;grid-row:1}.ty-shared-nav-link:nth-child(2){grid-column:2;grid-row:1}.ty-shared-nav-link:nth-child(3){grid-column:3;grid-row:1}.ty-shared-nav-link:nth-child(4){grid-column:4;grid-row:1}.ty-shared-nav-link:nth-child(5){grid-column:1;grid-row:2}.ty-shared-nav-link:nth-child(6){grid-column:2;grid-row:2}
+ .ty-shared-lang{grid-column:3/5;grid-row:2;justify-self:end;margin:0;gap:6px}
+ .ty-shared-footer{padding:25px 10px 30px}.ty-shared-footer-content{font-size:12px;line-height:1.55}
+ .ty-shared-company{font-size:14px;padding-right:32px;white-space:nowrap}.ty-shared-footer-left{display:none}
+ .ty-shared-footer-right{display:block;top:0;right:5px;transform:translateY(-13px);width:34px;height:34px}
+ .ty-shared-footer-content p{margin:9px 0}.ty-shared-footer-content p:first-of-type,.ty-shared-copyright{white-space:nowrap;font-size:clamp(9px,2.65vw,12px)}
+}
