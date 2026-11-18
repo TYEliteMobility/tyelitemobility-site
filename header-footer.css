@@ -55,7 +55,7 @@
 }
 .ty-shared-footer a:not([href^="tel:"]){color:#ded3c1!important;-webkit-text-fill-color:#ded3c1!important;background-image:none!important;text-shadow:none!important;filter:none!important;text-decoration:underline}
 .ty-shared-footer a[href^="tel:"]{color:#F4D98C!important;background-image:linear-gradient(180deg,#FFF4D1 0%,#F6DE9D 45%,#E9BF63 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 3px rgba(255,223,148,.30))!important}
-.ty-shared-footer-logo{display:block;position:static;transform:none;width:59px;height:59px;object-fit:contain;flex-shrink:0}
+.ty-shared-footer-logo{display:block;position:static;transform:none;width:63px;height:63px;object-fit:contain;flex-shrink:0}
 @media(max-width:700px){
  .ty-shared-header-inner{display:block;text-align:center;padding:9px 0;width:calc(100% - 20px)}
  .ty-shared-brand{width:fit-content;max-width:100%;margin:0 auto;justify-content:center;text-align:center;font-size:clamp(15px,4.3vw,20px)}
@@ -71,6 +71,6 @@
  .ty-shared-footer-content p{margin:8px 0}
  .ty-shared-company{display:block!important;padding:0!important;margin:0!important;text-align:center!important;font-size:13px;line-height:1.55}
  .ty-shared-footer-left{display:none!important}
- .ty-shared-footer-right{display:block!important;position:absolute!important;top:-9px!important;right:9px!important;transform:none!important;width:37px!important;height:37px!important}
+ .ty-shared-footer-right{display:block!important;position:absolute!important;top:-5px!important;right:13px!important;transform:none!important;width:40px!important;height:40px!important}
  .ty-shared-footer-content p:first-of-type,.ty-shared-copyright{white-space:nowrap!important;font-size:clamp(10px,2.85vw,13px)!important}
 }
