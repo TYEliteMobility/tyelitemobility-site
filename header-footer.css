@@ -4,7 +4,14 @@
 .ty-shared-header-inner{width:min(1120px,calc(100% - 36px));margin:auto;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0}
 .ty-shared-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;text-decoration:none!important;color:#F5EDE0!important;-webkit-text-fill-color:#F5EDE0!important;font:400 21px/1.25 'Marcellus',Georgia,serif;letter-spacing:.04em}
 .ty-shared-brand img{width:46px;height:46px;object-fit:contain;flex-shrink:0}
-.ty-shared-brand-text{display:block}.ty-shared-brand small{display:block;font:600 10px/1.3 'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif;letter-spacing:.12em;color:#D9C79C!important;-webkit-text-fill-color:#D9C79C!important}
+.ty-shared-brand-text{display:block}.ty-shared-brand small{
+  display:block;
+  font:600 11px/1.3 'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#D9C79C!important;
+  -webkit-text-fill-color:#D9C79C!important;
+}
 .ty-shared-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 13px}
 .ty-shared-nav-link{font:600 12px/1.3 'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif;text-decoration:none!important;white-space:nowrap;color:#f3e8d4!important;-webkit-text-fill-color:#f3e8d4!important;border:1px solid transparent;border-radius:6px;padding:5px 8px}
 .ty-shared-nav-link:hover{color:#ffda81!important;-webkit-text-fill-color:#ffda81!important}
@@ -62,7 +69,7 @@
 @media(max-width:700px){
  .ty-shared-header-inner{display:block;text-align:center;padding:9px 0;width:calc(100% - 20px)}
  .ty-shared-brand{width:fit-content;max-width:100%;margin:0 auto;justify-content:center;text-align:center;font-size:clamp(15px,4.3vw,20px)}
- .ty-shared-brand small{font-size:clamp(8px,2.1vw,10px);letter-spacing:.08em}
+ .ty-shared-brand small{font-size:clamp(9px,2.3vw,11px);letter-spacing:.08em}
  .ty-shared-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:3px;row-gap:7px;justify-items:center;align-items:center;margin-top:9px}
  .ty-shared-nav-link{min-width:0;max-width:100%;font-size:clamp(9px,2.45vw,12px);line-height:1.25;padding:5px 2px;text-align:center;white-space:nowrap}
  .ty-label-desktop{display:none}.ty-label-mobile{display:inline}
