@@ -81,6 +81,6 @@
  .ty-shared-footer-content p{margin:8px 0}
  .ty-shared-company{display:block!important;padding:0!important;margin:0!important;text-align:center!important;font-size:13px;line-height:1.55}
  .ty-shared-footer-left{display:none!important}
- .ty-shared-footer-right{display:block!important;position:absolute!important;top:-1px!important;right:17px!important;transform:none!important;width:43px!important;height:43px!important}
+ .ty-shared-footer-right{display:block!important;position:absolute!important;top:-1px!important;right:12px!important;transform:none!important;width:43px!important;height:43px!important}
  .ty-shared-footer-content p:first-of-type,.ty-shared-copyright{white-space:nowrap!important;font-size:clamp(10px,2.85vw,13px)!important}
 }
