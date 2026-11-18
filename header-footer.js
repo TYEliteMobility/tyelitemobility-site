@@ -20,7 +20,7 @@
   const nav = links.map(([file, en, th, enMobile, thMobile]) => {
     const label = thai ? th : en;
     const mobile = thai ? thMobile : enMobile;
-    const active = file.toLowerCase() === page.toLowerCase();
+    const active = file.toLowerCase() === page.toLowerCase() || (file === 'all-rental-prices.html' && window.location.pathname.toLowerCase().includes('all-rental-prices'));
     return `<a class="ty-shared-nav-link${active ? ' is-active' : ''}" href="${section}${file}"${active ? ' aria-current="page"' : ''}><span class="ty-label-desktop">${label}</span><span class="ty-label-mobile">${mobile}</span></a>`;
   }).join('');
   const title = thai ? 'บริการเช่ามอเตอร์ไซค์ · กรุงเทพฯ' : 'Motorbike & Scooter Rental · Bangkok';
