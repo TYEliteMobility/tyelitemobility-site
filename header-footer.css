@@ -24,19 +24,32 @@
 .ty-shared-footer-inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;width:min(1120px,100%);margin:0 auto}
 .ty-shared-footer-content{flex:1;min-width:0;text-align:center;font-size:13px;line-height:1.55}
 .ty-shared-footer-content p{margin:8px 0}
+
 .ty-shared-company {
   display: block;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 13px;
   font-weight: 700;
   line-height: 1.55;
-  color: #F4D98C !important;
-  background-image: linear-gradient(180deg, #FFF4D1 0%, #F6DE9D 45%, #E9BF63 100%) !important;
+  color: #ffe6a0 !important;
+  background-image: linear-gradient(175deg,
+    #fffdf0 0%,
+    #fff8d4 12%,
+    #f8ce69 27%,
+    #ad731f 38%,
+    #fffef1 47%,
+    #fff5c1 55%,
+    #edb94e 72%,
+    #fff4bf 85%,
+    #b7812c 100%) !important;
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   text-shadow: none !important;
-  filter: drop-shadow(0 0 3px rgba(255,223,148,.30)) !important;
+  filter:
+    drop-shadow(0 1px 1px #100b06)
+    drop-shadow(0 0 3px rgba(255,230,154,.65))
+    drop-shadow(0 0 8px rgba(255,199,76,.26)) !important;
 }
 .ty-shared-footer a:not([href^="tel:"]){color:#ded3c1!important;-webkit-text-fill-color:#ded3c1!important;background-image:none!important;text-shadow:none!important;filter:none!important;text-decoration:underline}
 .ty-shared-footer a[href^="tel:"],.ty-shared-copyright{color:#F4D98C!important;background-image:linear-gradient(180deg,#FFF4D1 0%,#F6DE9D 45%,#E9BF63 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 3px rgba(255,223,148,.30))!important}
