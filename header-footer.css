@@ -29,11 +29,14 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 13px;
   font-weight: 700;
-  color: #F5EDE0;
-  -webkit-text-fill-color: #F5EDE0;
-  background-image: none;
-  text-shadow: none;
-  filter: none;
+  line-height: 1.55;
+  color: #F4D98C !important;
+  background-image: linear-gradient(180deg, #FFF4D1 0%, #F6DE9D 45%, #E9BF63 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 3px rgba(255,223,148,.30)) !important;
 }
 .ty-shared-footer a:not([href^="tel:"]){color:#ded3c1!important;-webkit-text-fill-color:#ded3c1!important;background-image:none!important;text-shadow:none!important;filter:none!important;text-decoration:underline}
 .ty-shared-footer a[href^="tel:"],.ty-shared-copyright{color:#F4D98C!important;background-image:linear-gradient(180deg,#FFF4D1 0%,#F6DE9D 45%,#E9BF63 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 3px rgba(255,223,148,.30))!important}
