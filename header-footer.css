@@ -8,7 +8,15 @@
 .ty-shared-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 13px}
 .ty-shared-nav-link{font:600 12px/1.3 'Plus Jakarta Sans','IBM Plex Sans Thai',sans-serif;text-decoration:none!important;white-space:nowrap;color:#f3e8d4!important;-webkit-text-fill-color:#f3e8d4!important;border:1px solid transparent;border-radius:6px;padding:5px 8px}
 .ty-shared-nav-link:hover{color:#ffda81!important;-webkit-text-fill-color:#ffda81!important}
-.ty-shared-nav-link.is-active{color:#F4D98C!important;-webkit-text-fill-color:#F4D98C!important;background:rgba(244,217,140,.10);border-color:rgba(244,217,140,.75);font-weight:700}
+.ty-shared-nav-link.is-active {
+  color: #F4D98C !important;
+  -webkit-text-fill-color: #F4D98C !important;
+  background: rgba(244,217,140,.10) !important;
+  border: 1px solid rgba(244,217,140,.75) !important;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
 .ty-label-mobile{display:none}.ty-shared-lang{display:inline-flex;align-items:center;gap:5px;margin-left:4px;white-space:nowrap}
 .ty-shared-lang a{display:inline-block;padding:5px 8px;border:1px solid #b18a4a;border-radius:5px;color:#e9ce94!important;-webkit-text-fill-color:#e9ce94!important;text-decoration:none!important;font:600 12px/1.3 'Plus Jakarta Sans',sans-serif}
 .ty-shared-lang a[aria-current="page"]{background:rgba(200,155,76,.22);font-weight:800}
@@ -16,7 +24,17 @@
 .ty-shared-footer-inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;width:min(1120px,100%);margin:0 auto}
 .ty-shared-footer-content{flex:1;min-width:0;text-align:center;font-size:13px;line-height:1.55}
 .ty-shared-footer-content p{margin:8px 0}
-.ty-shared-company{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;line-height:1.55;color:#F4D98C!important;background-image:linear-gradient(180deg,#FFF4D1 0%,#F6DE9D 45%,#E9BF63 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 3px rgba(255,223,148,.30))!important}
+.ty-shared-company {
+  display: block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #F5EDE0;
+  -webkit-text-fill-color: #F5EDE0;
+  background-image: none;
+  text-shadow: none;
+  filter: none;
+}
 .ty-shared-footer a:not([href^="tel:"]){color:#ded3c1!important;-webkit-text-fill-color:#ded3c1!important;background-image:none!important;text-shadow:none!important;filter:none!important;text-decoration:underline}
 .ty-shared-footer a[href^="tel:"],.ty-shared-copyright{color:#F4D98C!important;background-image:linear-gradient(180deg,#FFF4D1 0%,#F6DE9D 45%,#E9BF63 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;filter:drop-shadow(0 0 3px rgba(255,223,148,.30))!important}
 .ty-shared-footer-logo{display:block;position:static;transform:none;width:55px;height:55px;object-fit:contain;flex-shrink:0}
