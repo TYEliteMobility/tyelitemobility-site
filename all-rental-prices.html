@@ -1378,7 +1378,13 @@ document.addEventListener("DOMContentLoaded", function () {
   .mobility-footer-inner {
     display: block !important;
     position: relative !important;
-    padding: 0 40px;
+    padding: 0 !important;
+  }
+  
+  .mobility-footer-inner > div > p:first-of-type,
+  .mobility-footer-inner > div > p:last-of-type {
+    white-space: nowrap !important;
+    font-size: clamp(10px, 2.85vw, 13px) !important;
   }
 
   .mobility-footer-inner > div > strong {
