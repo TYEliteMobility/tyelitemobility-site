@@ -10,7 +10,7 @@
   const page = filename === '' ? 'index.html' : filename;
   const links = [
     ['index.html', 'Home', 'หน้าแรก', 'Home', 'หน้าแรก'],
-    ['all-rental-prices.html', 'All Prices', 'ราคาค่าเช่าทั้งหมด', 'Prices', 'ราคาเช่า'],
+    ['all-rental-prices.html', 'All Prices', 'ราคาค่าเช่าทั้งหมด', 'All Prices', 'ราคาเช่า'],
     ['our-fleet.html', 'Real Fleet Gallery', 'แกลเลอรีรถจริง', 'Fleet Gallery', 'รูปรถจริง'],
     ['rental-info.html', 'Rental Info', 'ข้อมูลการเช่า', 'Rental Info', 'ข้อมูลเช่า'],
     ['riding-in-bangkok-guide.html', 'Bangkok Guide', 'คู่มือขับขี่ในกรุงเทพฯ', 'Bangkok Guide', 'คู่มือขับขี่'],
